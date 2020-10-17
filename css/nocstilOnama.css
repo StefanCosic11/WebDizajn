@@ -1,0 +1,29 @@
+.fixed-bottom{
+position: fixed;
+bottom: 0;
+left: 0;
+right:0;
+background-color:#222;
+border-top: 1px solid black; 
+}
+.container h2{
+  margin-top: 70px;
+}
+.spustanje{
+  margin-top: 70px;
+  margin-right: 10px;
+  
+}
+.row{
+margin-bottom: 60px;
+font-size: 110%;
+}
+
+.glyphicon.glyphicon-print.spustanje.pull-right {
+	font-size: 250%;		
+}
+.Omeni{
+  margin-top: 63px;
+  margin-left: 100px;
+  font-size: 170%;
+}

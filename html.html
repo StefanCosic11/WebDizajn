@@ -1,0 +1,533 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Stranica koja sadrzi neke osnovne stvari iz programskih jezika HTML i CSS">
+    <meta name="keywords" content="html, css, html i css">
+    <meta name="author" content="Stefan Ćosić stefancosic@yahoo.com">
+    <link rel="icon" href="slike/ikonica.png" alt="slika ikonice">
+
+    <title>Stefan Ćosić - HTML i CSS</title>
+    <link href="css/html.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+=============================================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img  src="slike/logo.png" width="95" height="31"  alt="Html i CSS-logo-Stefan Cosic"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="oNama.html">O nama</a></li>
+                
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="galerija.html">Galerija </a></li>
+                <li><a href="FAQ.html">FAQ </a></li>
+                <li><a href="cenovnik.html">Cenovnik </a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekti <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="projekti.html">Svi projekti</a></li>
+                    <li><a href="projekti.html">C++ i OpenGL</a></li>
+                    <li><a href="projekti.html">Sajt za UIT</a></li>
+                    <li><a href="projekti.html">Sajt u Bootstrapu</a></li>
+                     <li><a href="projekti.html">Lavirint u C++</a></li>
+                     
+                  </ul>
+                </li>
+                <li   class="active"><a href="html.html">HTML i CSS</a></li>
+                <li><a href="cplusplus.html">C++</a></li>
+                <li><a href="mapa.html">Mapa sajta</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div> <!-- kraj navigacije -->
+<!-- =================================================================================== -->
+    <div class="hatml">
+    <h2>HTML</h2>
+
+    </div>
+
+    <div id="hatml" class="tekst">
+          <p>Svaki HTML dokument sastoji se od osnovnih građevnih blokova - HTML elemenata. Svaki, HTML element sastoji se od para HTML oznaka (engl. <i>tag</i>). Takođe, svaki element može imati i atribute kojim se definišu svojstva tog elementa. Na samom početku HTML dokumenta preporučljivo je postaviti <code>&lt;!DOCTYPE&gt;</code> element, kojim se označava DTD (engl. <i>Document Type Declaration</i>), čime se definiše tačna verzija standarda koja se koristi za izradu HTML dokumenta. Nakon <code>&lt;!DOCTYPE&gt;</code> elementa, <code>&lt;html&gt;</code> elementom označava se početak HTML dokumenta. Unutar <code>&lt;html&gt;</code> elementa nalaze se i <code>&lt;head&gt;</code> element te <code>&lt;body&gt;</code> element. <code>&lt;head&gt;</code> element predstavlja zaglavlje HTML dokumenta u kojem se najčešće specificiraju jezičke funkcije HTML dokumenta kao i sam naslov (engl. <i>title</i>) stranice. Pomoću određenih HTML elemenata unutar zaglavlja dodaju se i stilska obilježja stranice, bila ona direktno ugrađena (engl. <i>embedded</i>) ili dodata kao referenca na spoljašnju <a href="/wiki/CSS" title="CSS">CSS</a> datoteku. Često se unutar zaglavlja još definišu i skripte kreirane u <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> jeziku. U <code>&lt;body&gt;</code> elementu kreira se sadržaj HTML dokumenta, odnosno, stranice koju on reprezentuje.</p>
+          <p>Svaka HTML oznaka (koja u paru kreira HTML element) počinje znakom <code>&lt;</code> (manje od), a završava znakom <code>&gt;</code> (više od). Zatvarajuća HTML oznaka kreira se na isti način kao i otvarajuća, ali se pre završnog znaka <code>&gt;</code> dodaje i kosa crta <code>/</code> (engl. <i>slash</i>).</p>
+          <p>Osim navedenih, standardnih HTML elemenata, postoje i samozatvarajući HTML elementi. Kod takvih elemenata nema zatvarajuće oznake.</p>
+          
+          <p><b>Primer jednostavnog HTML dokumenta</b></p>
+  <div class="mw-highlight mw-content-ltr" dir="ltr">
+  <pre>
+  <span class="cp">&lt;!DOCTYPE html&gt;</span>
+  <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Naziv stranice<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ovde se unosi sam sadržaj stranice.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+   </pre>
+</div>
+
+   <p><b>Komentare</b> možemo unositi bilo gde unutar html dokumenta i taj tekst neće biti prikazan na stranici, tj. moći će da se vidi samo ako otvorite skriptu s code editorom. Na ovaj način možete ostavljati sebi poruke unutar skripte i s njima npr. skrenuti pažnju na jedan deo skripte, ili s ovim možemo jedan deo skripte isključiti, a sačuvati kôd tog dela, kojeg možemo ponovno aktivirati ako izbrišemo sledeće:</p>
+    <p>s ovim otvaramo komentar: <code>&lt;!--</code></p>
+      <p>s ovim zatvaramo komentar: <code>--&gt;</code></p>
+      <p><b>Primer:</b></p>
+      <div class="mw-highlight mw-content-ltr" dir="ltr">
+      <pre>
+      <span class="c">&lt;!-- ovo je komentar  --&gt;</span>
+      </pre></div>
+
+
+      <p>Kako bi oblikovali tekst unutar HTML dokumenta, potrebno je staviti određeni tag na početku teksta koji želimo oblikovati i završni tag na kraju teksta.</p>
+<p><b>Primeri:</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>tag za odlomak (Paragraph)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">big</span><span class="p">&gt;</span>veliki tekst<span class="p">&lt;/</span><span class="nt">big</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>podebljani tekst<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>nakrivljen tekst<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">u</span><span class="p">&gt;</span>podcrtan text<span class="p">&lt;/</span><span class="nt">u</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>"jaki" tekst<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>nakrivljen tekst<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>podignut tekst<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>spušten tekst<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">del</span><span class="p">&gt;</span>precrtan tekst<span class="p">&lt;/</span><span class="nt">del</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>tekst računalnog koda<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>vodoravna crta<span class="p">&lt;/</span><span class="nt">hr</span><span class="p">&gt;</span>
+</pre></div>
+
+<ul>
+<li>veličina fonta od 1 do 7</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">font</span> <span class="na">size</span><span class="o">=</span><span class="s">"6"</span><span class="p">&gt;</span>velicina fonta 6<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+</pre></div>
+<ul>
+<li>boju fonta možemo menjati na više načina, koristeći hexa zapis boja</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">"#770000"</span><span class="p">&gt;</span>ovaj tekst je u hexaboji #770000<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+</pre></div>
+<ul>
+<li>koristeći ime boje</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">"blue"</span><span class="p">&gt;</span>ovaj tekst je plav<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+</pre></div>
+<ul>
+<li>koristeći rgb, ali taj zapis nije uobičajen</li>
+</ul>
+<ul>
+<li>vrsta fonta</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">font</span> <span class="na">face</span><span class="o">=</span><span class="s">"Bookman Old Style, Book Antiqua, Garamond"</span><span class="p">&gt;</span>ovom paragrafu je promenjen font<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+</pre></div>
+<ul>
+<li>veliko početno slovo</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">font</span> <span class="na">size</span><span class="o">=</span><span class="s">"5"</span> <span class="na">face</span><span class="o">=</span><span class="s">"Georgia, Arial"</span> <span class="na">color</span><span class="o">=</span><span class="s">"blue"</span><span class="p">&gt;</span>P<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>početno slovo
+</pre></div>
+
+<h3><span class="mw-headline" id="Dodavanje_slika">Dodavanje slika</span></h3>
+<p>Kada bi web stranice sadržavale samo tekst i dalje bi bile tehnološki impresivne, ali bez slika ne bi bile niti približno zabavne kao danas. Dva najčešće upotrebljavana grafička formata datoteka na internetu su <b><a href="/wiki/GIF" title="GIF">GIF</a></b> i <b><a href="/wiki/JPEG" title="JPEG">JPEG</a></b> (GIF se izgovara <b>"gif"</b>, a JPEG <b>"džej-peg"</b>). <b><a href="/wiki/JPEG" title="JPEG">JPEG</a></b> (Joint Photographic Experts Group) format primarno se koristi za prikaz realističnih slika fotografskog kvaliteta, dok se gif koristi za slike s manjim spektrom boja, kao što su na primer navigacijske ikone, banneri, animacije itd,... Među web dizajnerima veliku je popularnost stekao i format <b><a href="/wiki/PNG" title="PNG">PNG</a></b> (<a href="/wiki/PNG" title="PNG">PNG</a> se izgovara<b>"pe-en-ge"</b>) koji je stvoren kako bi poboljšao i zamenio GIF format. PNG podržava slike zasnovane na paleti (s paletom definisanom <b>24</b> bitnim&#160;RGB&#160;bojama), greyscale slike (sivih tonova) i <b>RGB</b> slike. Zamišljen je kao grafički format za razmenu preko interneta, a ne za profesionalnu upotrebu, tako da ne koristi neke druge sheme boja (kao što je&#160;<b><a class="external text" href="http://en.wikipedia.org/wiki/CMYK_color_model">CMYK</a></b>&#160;(cyan-mangenta-yellow-black). Sve slike, bez obzira na format, ubacuju se istim tagom. Budući da <code>&lt;img&gt;</code> tag zahteva obeležje <code>src</code>, tada se <code>&lt;img src="link_slike.jpeg"&gt;</code> posmatra kao celoviti tag. <code>&lt;img&gt;</code> tag nema svoj završni oblik. To je tag koji zatvaramo na njegovom kraju kosom crtom <code>&lt;img /&gt;</code>.</p>
+<p><br />
+<b>Primer:</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Primer ubacivanja slike<span class="err">&lt;</span>/title
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"link_lokacije_slike.jpg"</span><span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<p>Pomoću obeležja <code>alt</code> možemo definisati tekst koji će opisivati šta je na slici, koji će se prikazati ukoliko korisnikov web pregledač nije u stanju da otvori dokument.</p>
+<p><b>Primer:</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"pas.gif"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Na slici je pas"</span> <span class="na">height</span><span class="o">=</span><span class="s">"100"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100"</span><span class="p">&gt;</span>
+</pre></div>
+<p>Isto tako možemo pomoću obeležja <code>title</code>, dok korisnik mišem nacilja određeni deo dokumenta koji smo označili tim tagom, pojaviće mu se okvirić s tekstom koji smo napisali.</p>
+<p><b>Primer:</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"pas.gif"</span> <span class="na">title</span><span class="o">=</span><span class="s">"Na slici je pas"</span> <span class="na">height</span><span class="o">=</span><span class="s">"100"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100"</span><span class="p">&gt;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Meta_tagovi">Meta tagovi</span></h3>
+<p><b>Meta tagovi</b> su delovi HTML-a u stranici koje upotrebljavaju pretraživač da bi zapisale informacije o vašoj stranici. Ovi tagovi sadrže ključne reči, opis, informaciju o vlasništvu, naziv stranice itd. Oni su među mnogim stvarima koje ispituje pretraživač kada "gledaju" vašu stranicu. Iako ih nije nužno, vrlo ih je korisno upotrebljavati, pogotovo ako želite da imate dobru poziciju na pretraživačima (a ko ne želi?). Ako napravite web stranicu i registrujete URL kod pretraživača, one će posetiti vašu stranicu i pokušati da je indexira. Svaki pretraživač funkcioniše malo drugačije, i svaki drukčije ceni pojedine elemente web stranice. Npr. Altavista daje prednost opisnom tagu (description), a Inktomi indexira oboje, i tekst stranice, kao i meta tagove. Drugi pretraživači poput Exactseek-a su pravi meta tag pretraživači, tako da ako vaša stranica ne sadrži naziv (title), i opisni meta tag (description). Naravno, svi pretraživači ne rade na ovaj način. Neki daju prednost sadržaju. Pretraživači u obzir uzimaju više od 100 stvari kada razmatraju neku stranicu. Najveći razlog zašto mnogi pretraživači ne daju toliku važnost meta tagovima je zbog spama. Ljudi su se setili da na svoje stranice stave mnoge ključne riječi koje nemaju veze sa sadržajem stranice samo da bi dobili više poseta. Nakon nekog vremena neki pretraživači su prestali gledati meta tagove, služili su im uglavnom samo kao potvrda da bi bili sigurni da odgovaraju onome što se nalazi na stranici. Kada su ključne reči potpuno nevezane za sadržaj stranice neki pretraživači će kazniti tu stranicu.</p>
+<p>Ako je vaša stranica bogata slikama i grafikom, tada su vam meta tagovi jako važni. Kažu da slika govori hiljadu reči, ali slike su nažalost pretraživačima bezvredne. Pogotovo ako stranica sadrži jako malo teksta. Tada je potrebno koristiti obeležje <code>alt</code> koje izgleda ovako:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"ime_slike.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Tekst koji će pretraživač indexirati"</span><span class="p">&gt;</span>
+</pre></div>
+<p>Meta tagovi bi uvek trebalo da budu smešteni u&#160;<code>&lt;head&gt;</code>&#160;područje HTML dokumenta. <code>&lt;head&gt;</code> tag se nalazi odmah nakon&#160;<code>&lt;html&gt;</code>&#160;taga, i završava pre&#160;<code>&lt;body&gt;</code>&#160;taga.</p>
+<p><b>primer:</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Naziv stranice<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"opis web stranice"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"keywords"</span> <span class="na">content</span><span class="o">=</span><span class="s">"popis ključnih reči vezanih za sadržaj stranice "</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"robots"</span> <span class="na">content</span><span class="o">=</span><span class="s">"index,follow"</span><span class="p">&gt;</span>
+</pre></div>
+<p>Uvek budite sigurni da vaši meta tagovi nemaju nikakvih prelazaka u novi red u sebi, jer će ih u tom slučaju pretraživač videti kao neispravan kod i ignorisati. Takođe bi trebali izbegavati upotrebu velikih slova (html5 standard), kao i ponavljanje izraza unutar taga ključne reči.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"opis web stranice"</span><span class="p">&gt;</span>
+</pre></div>
+<p>Mnogi pretraživači će prikazati ovaj tekst u rezultatima pretraživanja pokraj naziva stranice. Neka taj tekst ne bude predugačak, neka bude razumljiv i neka što bolje opiše sadržaj vaše stranice.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"keywords"</span> <span class="na">content</span><span class="o">=</span><span class="s">"popis ključnih reči vezanih za sadržaj stranice"</span><span class="p">&gt;</span>
+</pre></div>
+<p>Ključne reči predstavljaju ključne termine koje neko može upisati u pretraživač. Izaberite samo važne izraze. Ako ćete staviti te izraze pod tag ključne reči, trebali biste ih spomenuti i na tekstu na stranici. Mnogi pretraživači uspoređuju vaš meta sadržaj s tekstualnim sadržajem stranice, i ako se to ne poklapa, vaša stranica može zaraditi kaznu, i biti na lošoj poziciji kod rezultata pretraživanja.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"robots"</span> <span class="na">content</span><span class="o">=</span><span class="s">"index,follow"</span><span class="p">&gt;</span>
+</pre></div>
+<p>Mnoge web stranice imaju ovaj tag neispravno napisan. Primer neispravnog korišćenja je <code>content="index, follow, all"</code> Neispravno jer neki pretraživači ne mogu obraditi razmake između reči. Većina pretraživača po defaultu pretpostave da želite da vaša web stranica bude indeksirana i da linkovi budu praćeni, tako da korišćenje neispravne sintakse može rezultirati time da pretraživač jednostavno ignoriše vašu stranicu. Ako zbog nekog razloga ne želite da vaša stranica bude indeksirana u pretraživačima, zamenite u tagu reč <code>index</code> sa <code>noindex</code>, a ako želite da linkovi ne budu praćeni, zamenite reč <code>follow</code> sa <code>nofollow</code>.</p>
+<p>Među ostalim meta tagovima koristan tag za napomenu o zaštiti autorskih prava autora sadržaja stranice je <code>name="Author"</code>.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"Author"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Ime firme koja je dizajnirala sajt"</span><span class="p">&gt;</span>
+</pre></div>
+<p>Na internetu se svakodnevno pojavljuje više od 8 miliona novih stranica, a pretraživači indeksiraju samo jedan deo od toga. Meta Tagovi su uobičajen standard koji može osigurati pravilnu kategorizaciju vaše stranice. Uvek upotrebljavajte Meta Tagove i u njima koristite samo najvažnije reči vezane za sadržaj stranice. Pravilno korišćenje Meta Tagova vam može samo pomoći kod pozicije na pretraživaču, što podrazumeva i veću i kvalifikovaniju posetu stranice.</p>
+
+
+<h3><span class="mw-headline" id="Dodavanje_CSS_stilova">Dodavanje CSS stilova</span></h3>
+<p>Godine 1996., <b><a href="/wiki/W3C" title="W3C">W3C</a></b> prvi put spominje ideju stilskih obrazaca <a href="/wiki/CSS" title="CSS">(CSS – Cascading Style Sheets</a>) za oblikovanje HTML dokumenta. Standard, koji je objavljen sredinom 1998.godine, omogućuje web dizajnerima da odvoje strukturu i oblik svojih dokumenata. <a href="/wiki/CSS" title="CSS">CSS</a> standard određuje tri vrste stilskih obrazaca: <b>ugrađeni, linijski i vezani.</b></p>
+<p><b>UGRAĐENI</b> – Stilska obeležja se ugrađuju unutar <code>&lt;style&gt;</code> taga na početku samog HTML dokumenta. Stil pridružen određenom tagu primenjuje se na sve tagove te vrste unutar dokumenta.</p>
+<p><br />
+<b>Primer</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span><span class="p">&gt;</span>
+  <span class="nc">.ime_stila</span> <span class="p">{</span>
+    <span class="nb">font-size</span><span class="o">:</span> <span class="m">36px</span><span class="p">;</span>
+    <span class="nb">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="nb">background-color</span><span class="o">:</span> <span class="m">#0F0</span><span class="p">;</span>
+    <span class="nb">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.drugi_stil</span> <span class="p">{</span> <span class="nb">color</span><span class="o">:</span> <span class="m">#0F0</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+<p><b>LINIJSKI</b> – Stilska obeležja ugrađuju se kroz ceo HTML dokument. Svakom pojedinom HTML tagu možemo pridružiti svoja vlastita stilska obilježja.</p>
+<p><b>Primjer</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"font-family: Arial, Helvetica, sans-serif; font-size: 36px; color: #F00;"</span><span class="p">&gt;</span>Označeni tekst stylom<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+<p><b>VEZANI</b> – Stilska obeležja sadržana su u zasebnoj datoteci. Ta datoteka se može povezati s bilo kojim HTML dokumentom koristeći tag <code>&lt;link&gt;</code> koji se smešta unutar <code>&lt;head&gt;</code> taga.</p>
+<p><b>Primer</b></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"http//www.pou.com/Unnamed Site 2/style.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<!-- ============================ Download =============================== -->
+<a class="snimi" href="html.pdf" target="_blank">Snimi</a>
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ====================================== CSS ================================================ -->
+    <div class="hatml" id="cess" >
+    <h2>CSS</h2>
+
+    </div>
+      
+      <div class="tekst">
+            <p><b>CSS</b> je jezik formatiranja pomoću kog se definiše izgled elemenata veb-stranice.</p>
+        <p><span class="referencenecessary" style="background-color:#fff9f9; color:DarkSlateGray;border:1px solid #ffdcdc">Prvobitno, <a href="/wiki/HTML" title="HTML">HTML</a> je služio da definiše kompletan izgled, strukturu i sadržaj veb-stranice, ali je od verzije 4.0 HTML-a uveden CSS koji bi definisao konkretan izgled, dok je HTML ostao u funkciji definisanja strukture i sadržaja.</span>
+
+        <h3><span class="mw-headline" >Jezik</span></h3>
+<p>CSS sintaksa se sastoji od <i>opisa</i> izgleda elemenata u dokumentu. Opis može da definiše izgled više elemenata, i više opisa može da definiše jedan element. Na taj način se opisi <i>slažu</i> jedan preko drugog da bi definisali konačni izgled određenog elementa (otuda naziv <i>Cascading</i>  da bi se dočaralo slaganje jednog stila preko drugog u definisanju konačnog izgleda elementa)</p>
+<p>Svaki opis se sastoji od tri elementa:</p>
+<ul>
+<li>definicija ciljnih elemenata</li>
+<li>svojstva</li>
+<li>vrednosti</li>
+</ul>
+<p>Nakon što definišemo ciljne elemente, tj. elemente na koje će se trenutni opis odnositi, nizom parova svojstvo-vrednost definišemo izgled svakog ciljnog elementa. Sintaksa koja se pri tome definiše je sledećeg oblika:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="err">ciljni</span> <span class="err">elementi</span> <span class="p">{</span>
+    <span class="err"></span><span class="o">:</span> <span class="err">vrednost</span><span class="p">;</span>
+    <span class="err">svojstvo</span><span class="o">:</span> <span class="err">vrednost</span><span class="p">;</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+<p>CSS podržava i komentare, koji izgledaju kao u programskom jeziku <a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%81%D0%BA%D0%B8_%D1%98%D0%B5%D0%B7%D0%B8%D0%BA_C" class="mw-redirect" title="Programski jezik C">C</a>, dakle navodeći se između znakova <code>/*</code> i <code>*/</code>.</p>
+<h3><span class="mw-headline">Ciljni elementi</span></h3>
+<p>Ciljni elementi se definišu na tri načina:</p>
+<ul>
+<li>navodeći HTML tag ciljnih elemenata</li>
+<li>navodeći <i>klasu</i> elemenata</li>
+<li>navodeći direktnu identifikacionu vrednost (<code>ID</code>) elementa</li>
+</ul>
+<p>Kada definišemo preko HTML taga, to znači da će opis uticati na sve elemente u dokumentu koji imaju ovaj tag. Definicija ciljnih elemenata se tada vrši preko direktnog upisa odgovarajućeg HTML taga:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nt">body</span> <span class="p">{</span>
+    <span class="err">svojstvo</span><span class="o">:</span> <span class="err">vrednost</span><span class="p">;</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+<p>Klasa HTML elementa je reč koju stavimo kao vrednost argumenta <code>CLASS</code> pri definiciji tog elementa. Definicija ciljnih elemenata (svih koji imaju određenu istu klasu) se vrši tako što upišemo znak tačke (.) a zatim naziv klase:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nc">.imeKlase</span> <span class="p">{</span>
+    <span class="err">svojstvo</span><span class="o">:</span> <span class="err">vrednost</span><span class="p">;</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+<p>Ovaj opis će, dakle, imati uticaja na sve elemente u dokumentu koji su definisani na sledeći način:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"imeKlase"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"imeKlase"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+...
+</pre></div>
+<p>Identifikaciona vrednost elementa je vrednost argumenta <code>ID</code> pri definiciji tog elementa. U jednom dokumentu identifikacione vrijednosti moraju biti jedinstvene, tj. može postojati samo jedan element sa određenom identifikacionom vrednošću, što znači da ovakvi opisi mogu uticati samo na po jedan element u dokumentu. Definišu se pomoću znaka tarabe (#), a zatim identifikacionu vrednost:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nn">#identifikacionaVrednost</span> <span class="p">{</span>
+    <span class="err">svojstvo</span><span class="o">:</span> <span class="err">vrednost</span><span class="p">;</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+<p>Ovaj će, dakle, opis uticati na sve elemente koji u svojoj HTML definiciji imaju <code>id="identifikacionaVrednost"</code>.</p>
+<h3><span class="mw-headline" >Svojstva i vrednosti</span></h3>
+<p>Svojstva na koja želimo da utičemo u datom opisu se definišu preko niza ključnih reči definisanih u <a href="/wiki/W3C" title="W3C">W3C</a> standardu, a koje se kategorišu u sledeće grupe:</p>
+<ul>
+<li>definicija pozadine elementa</li>
+<li>ivica</li>
+<li>okvir</li>
+<li>prikaz</li>
+<li>dimenzije</li>
+<li>font</li>
+<li>generisani sadržaj</li>
+<li>margine</li>
+<li>unutrašnji prazan prostor</li>
+<li>pozicija</li>
+<li>izgled pripadajućeg teksta</li>
+</ul>
+<p>Vrednosti pojedinih svojstava se definišu na dva načina:</p>
+<ul>
+<li>predefinisanim ključnim rečima</li>
+<li>brojevnim vrednostima</li>
+</ul>
+<p>Predefinisane ključne reči za vrednosti svojstava se koriste u situacijama kada dato svojstvo ima ograničen broj mogućnosti. Tako na primer svojstvo za definiciju pozadine elementa može biti samo <code>scroll</code> (da se kreće uvek zajedno sa sadržajem elementa) i <code>fixed</code> (da stoji uvek na istom mjestu bez obzira na sadržaj).</p>
+<p>Brojevne vrednosti se mogu zadavati na nekoliko načina:</p>
+<ul>
+<li>zadajući samo brojevnu vrednost</li>
+<li>navodeći i jedinicu veličine skupa sa opisom (<code>px</code>, <code>em</code>, <code>pt</code>, ...)</li>
+</ul>
+<p>Ako zadajemo samo brojevnu vrednost, imamo mogućnost da je pišemo na dva načina:</p>
+<ul>
+<li>u dekadnom sistemu (709)</li>
+<li>u heksadekadnom sistemu (#a4fde3); ovaj sistem se najviše koristi u definiciji boje</li>
+</ul>
+<h3><span class="mw-headline">Primeri</span></h3>
+<ul>
+<li>Primer za definiciju pozadine cijele stranice:</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nt">body</span> <span class="p">{</span>
+    <span class="nb">background-color</span><span class="o">:</span> <span class="nb">aqua</span><span class="p">;</span> <span class="c">/* pozadina boje aqua */</span>
+<span class="p">}</span>
+</pre></div>
+<ul>
+<li>Primer za definiciju izgleda svih elemenata klase "citat":</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nc">.citat</span> <span class="p">{</span>
+    <span class="nb">font-family</span><span class="o">:</span> <span class="nb">serif</span><span class="p">;</span> <span class="c">/* font sa kukicama, као Times New Roman */</span>
+    <span class="nb">font-style</span><span class="o">:</span> <span class="nb">italic</span><span class="p">;</span> <span class="c">/* iskošen tekst */</span>
+    <span class="nb">font-size</span><span class="o">:</span> <span class="m">9pt</span><span class="p">;</span>     <span class="c">/* veličina slova 9 tačaka */</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" >Organizacija CSS koda</span></h3>
+<p>CSS kod se može zadavati na tri standardna mesta:</p>
+<ul>
+<li>direktno u tagu, koristeći argument <code>style</code></li>
+<li>u zaglavlju dokumenta unutar taga <code>style</code></li>
+<li>u eksternoj datoteci, koja se u dokument uključuje tagom <code>link</code></li>
+</ul>
+<p>Za jako male dokumente, argument <code>style</code> taga može biti prihvatljiv, ali za veće dokumente ne može jer se na ovaj stil definiše za svaki element ponaosob. Definicija stilova se najčešće radi grupišući elemente u klase, pomoću argumenta <code>class</code> taga, a zatim definišući izgled tih klasa bilo u okviru elementa <code>style</code> u zaglavlju ili u eksternoj datoteci. Argument <code>style</code> taga se najčešće koristi ako neki element ne pripada nijednoj grupi i ima posebne zahteve u odnosu na sve ostale elemente.</p>
+<p>Stilovi u eksternoj datoteci imaju jednu posebnu prednost u odnosu na preostala dva načina, a to je da na taj način možemo da utičemo na elemente više dokumenata, praktično na čitav jedan sajt. Dovoljno je da pisac bude dosledan u definisanju klasa elemenata, da bi jedan fajl sa stilovima određivao izgled svih stranica. Na ovaj način jedna promjena u fajlu sa stilovima utiče na sve stranice te su stilovi centralizovani.</p>
+<h3><span class="mw-headline">Ograničenja</span></h3>
+<p>Poznata ograničenja „čistog“ CSS-a uključuju u sledeća:</p>
+<ul>
+<li>Nedoslednost pretraživača:</li>
+</ul>
+<dl>
+<dd>Različiti pretraživači će interpretirati CSS kôd na različite načine zbog svojih bagova ili zbog nepodržavanja određenih mogućnosti CSS-a. Na primer, Internet Eksplorer, čija ranija izdanja nisu podržavala mnoge mogućnosti CSS-a 2.1, su pogrešno interpretirala veliki broj bitnih opisa objekata, uključujući širinu, visinu i plutanje. Da bi se postigla doslednost prikaza u brojnim popularnim brauzerima, moraju se koristiti raznorazne „veštine“ i „štimanja“. I pored toga, ponekad je nemoguće postići identičan prikaz dokumenta u različitim pretraživačima.</dd>
+</dl>
+<ul>
+<li>Složenost</li>
+</ul>
+<dl>
+<dd>Veliki sajtovi imaju problem veličine CSS dokumenata, koji vremenom postaju toliko složeni i dugački da održavanje i dodavanje novih svojstava postaje izuzetno težak posao.</dd>
+</dl>
+<ul>
+<li>Opisi elemenata se ne mogu bazirati na drugim objektima</li>
+</ul>
+<dl>
+<dd>CSS ne podržava „nasleđivanje“ - ne postoji način da se izabere opis nekog drugog elementa na kojem bi se bazirao trenutni element. Nasleđivanje postoji, ali se bazira na unapred utvrđenom pravilu da se opisi nasleđuju od elementa u kojem se dotični element nalazi, tj. od roditeljskog elementa. Radna grupa za CSS objašnjava da ne želi da uvede proizvoljno nasljeđivanje jer bi to otežalo i usporilo rad brauzera.</dd>
+</dl>
+<ul>
+<li>Problemi pri vertikalnoj orijentaciji elemenata</li>
+</ul>
+<dl>
+<dd>Iako je prilično lako postići horizontalni tok elemenata, vertikalni tok je prilično teško, i ponekad nemoguće, postići na željeni način. Jednostavni prohtevi, poput centriranja objekta po vertikali, ili prikaz podnožja dokumenta na samom dnu vidljivog dijela prozora, zahtijevaju prilično komplikovane opise, ili opise koje podržavaju samo određeni brauzeri. Ponekad je najlakše uposliti skriptni jezik poput <a href="/wiki/%D0%88%D0%B0%D0%B2%D0%B0%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82" title="Javaskript">Javaskripta</a> da na osnovu tekućeg stanja klijenta prikaže element na odgovarajućoj poziciji, čime se opet gubi na kompatibilnosti jer određeni korisnici ne žele da koriste Javaskript.</dd>
+</dl>
+<ul>
+<li>Nedostatak aritmetičkih operacija</li>
+</ul>
+<dl>
+<dd>Dosadašnje verzije CSS-a ne podržavaju ni najjednostavnije aritmetičke operacije (npr. <code>margin-left: 10%-10px;</code>). Neki pomaci su napravljeni, raspravom Radne grupe za CSS o uvođenju izraza <code>calc()</code>, a Internet Eksplorer od verzije 5.0 podržava izraz <code>expression</code>, sa sličnim mogućnostima.</dd>
+</dl>
+<ul>
+<li>Neslaganje pojedinačnih opisa</li>
+</ul>
+<dl>
+<dd>Određena svojstva imaju sličnu svrhu, i često se ne slažu u potpunosti. Na primer, svojstva <code>position</code>, <code>float</code> i <code>display</code> određuju lokaciju prikaza elementa i njihovo kombinovanje često prouzrokuje neočekivane rezultate a određene kombinacije su po pravilu zabranjene. Na primer, ako određenom elementu dodijelimo svojstvo <code>display: table-cell</code>, onda mu ne možemo dodijeliti svojstvo <code>float</code> niti <code>position: relative</code>.</dd>
+</dl>
+<ul>
+<li>Određeni elementi ne mogu sadržati plutajuće pod-elemente</li>
+</ul>
+<dl>
+<dd>Ne postoji svojstvo koje takve elemente forsira da podržavaju plutajuće pod-elemente. Ponekad dodeljivanje svojstva <code>position: relative</code> rešava ovaj problem, ili definisanje i samog nad-elementa da ima plutajuće svojstvo, ali u situacijama kada to nije prihvatljivo za organizaciju dokumenta, to nije rešenje.</dd>
+</dl>
+<ul>
+<li>Nemogućnost postavljanja više pozadinskih tema istom elementu</li>
+</ul>
+<dl>
+<dd>Složena grafička rešenja zahtevaju više od jedne pozadinske slike po elementu, ali CSS podržava samo jednu. Zbog toga su dizajneri primorani da elemente slažu jedan preko drugog da bi dobili ono što su tražili, ili da odustanu od prvobitne ideje. Ovaj problem se planira riješiti u trećoj verziji CSS-a, a određena rešenja već postoje u pretraživačima <a href="/wiki/%D0%A1%D0%B0%D1%84%D0%B0%D1%80%D0%B8_(%D0%B2%D0%B5%D0%B1-%D0%BF%D1%80%D0%B5%D0%B3%D0%BB%D0%B5%D0%B4%D0%B0%D1%87)" title="Safari (veb-pregledač)">Safari</a> i <a href="/w/index.php?title=%D0%9A%D0%BE%D0%BD%D0%BA%D0%B2%D0%B5%D1%80%D0%BE%D1%80&amp;action=edit&amp;redlink=1" class="new" title="Konkveror (stranica ne postoji)">Konkveror</a>.</dd>
+</dl>
+<ul>
+<li>Kontrola oblika elemenata</li>
+</ul>
+<dl>
+<dd>CSS trenutno dopušta samo pravougaone elemente. Elementi zaobljenih uglova ili drugih nepravougaonih oblika zahtevaju izlaženje iz opsega CSS-a ili korišćenje sličica.</dd>
+</dl>
+<ul>
+<li>Ne postoje striktna pravila o redosledu opisa i pripadajućih svojstava</li>
+</ul>
+<dl>
+<dd>Trenutno se opisi i svojstva mogu zadavati u bilo kom redu, ali ukoliko su u konfliktu, prednost ima poslednji zadati izraz.</dd>
+</dl>
+<ul>
+<li>Nepostojanje promenljivih</li>
+</ul>
+<dl>
+<dd>CSS ne podržava promenljive ni u kakvom obliku. Promenljive bi poslužile za centralizovani opis određene boje, veličine ili čitavog skupa svojstava, što bi obezbedilo lakše održavanje i menjanje, ali i manje CSS dokumente. Sa trenutnim verzijama, pristupa se grupnom opisivanju nekoliko različitih klasa razdvojenim zarezom, da bi se umanjio problem nepostojanja promenljivih.</dd>
+</dl>
+<ul>
+<li>Nedostatak kolumna (stubaca)</li>
+</ul>
+<dl>
+<dd>Kolumne teksta, poput novinarskih, se najčešće rešavaju plutajućim elementima ili tabelama, ali različiti brauzeri, na monitorima različitih rezolucija, veličina i odnosa strana će prikazati različite rezultate. Dodavanje jednostavnih deklaracija za definisanje kolumna bi rešilo ove probleme.</dd>
+</dl>
+<a class="snimi" href="css.pdf" target="_blank">Snimi</a>
+
+      </div>
+
+
+      <!-- FOOTER -->
+      <footer class="fixed-bottom">
+        <p class="pull-right"><a href="#">Povratak na vrh strane</a></p>
+        <p>&copy; 2016 Stefan Inc. &middot;  <a href="http://www.facebook.com/stefan.cosic.3" target="_blank"> <img src="slike/facebook-ikonica.png" alt="HTML-Facebook ikonica" style="width:20px;height:20px;"></a> 
+          
+          &middot;<a href="https://www.linkedin.com/in/stefan-%C4%87osi%C4%87-758359131?trk=nav_responsive_tab_profile" target="_blank"> <img src="slike/linkedin-ikonica.png" alt="HTML-Linkedin ikonica" style="width:20px;height:20px;"></a>
+
+          &middot;<a href="https://www.instagram.com/stefauskas/" target="_blank"> <img src="slike/instagram-ikonica.png" alt="HTML-Instagram ikonica" style="width:20px;height:20px;"></a>
+
+          &middot;<a href="https://www.youtube.com/user/MrStefancosic" target="_blank"> <img src="slike/youtube-ikonica.png" alt="HTML-Youtube ikonica" style="width:20px;height:20px;"></a>
+
+          &middot;<a href="https://twitter.com/klosarkas11" target="_blank"> <img src="slike/tviter-ikonica.png" alt="HTML-Twiter ikonica" style="width:20px;height:20px;"></a>
+
+          <a href="oNama.html">&nbsp;O nama &nbsp;</a>
+            <a href="FAQ.html">FAQ &nbsp;</a>
+            <a href="kontakt.html">Kontakt </a>
+            
+      </footer>
+
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

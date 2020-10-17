@@ -1,0 +1,26 @@
+
+.naslov{
+	font-size:200%;
+	color: #898484;
+	margin-top: 60px;
+	
+}
+.fixed-bottom{
+position: fixed;
+bottom: 0;
+left: 0;
+right:0;
+background-color:#222;
+border-top: 1px solid black; 
+}
+
+.siva_pozadina{
+
+ background:rgba(255,255,255,0.4);
+
+border: solid #222 10px;
+color: #0e1623;
+width: 90%;
+margin-bottom: 40px;
+ text-align: justify;
+}

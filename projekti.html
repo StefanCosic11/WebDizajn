@@ -1,0 +1,161 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Stranica projekti , sadrži sadrži objašnjenja u vezi projekata na kojima sam radio">
+    <meta name="keywords" content="Stefan,programer,veb dizajn,dizajn, sajt, pravljenje sajtova,bootstrap,,pravljenje sajta u Bootstrapu,projekti u C++ i OpenGL ,Lavirint">
+    <meta name="author" content="Stefan Ćosić stefancosic@yahoo.com">
+    <link rel="icon" href="slike/ikonica.png" alt="slika ikonice">
+
+    <title>Stefan Ćosić - Projekti</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/projekti.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+=============================================================================== -->
+  <body >
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img  src="slike/logo.png" width="95" height="31" alt="Projekti-logo-Stefan Cosic"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="oNama.html">O nama</a></li>
+                
+                <li ><a href="usluge.html">Usluge</a></li>
+                <li><a href="galerija.html">Galerija </a></li>
+                <li><a href="FAQ.html">FAQ </a></li>
+                <li><a href="cenovnik.html">Cenovnik </a></li>
+                <li class="dropdown"  >
+                  <a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekti <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="active"><a href="projekti.html">Svi projekti</a></li>
+                    <li><a href="projekti.html">C++ i OpenGL</a></li>
+                    <li><a href="projekti.html#muzicki">Sajt za UIT</a></li>
+                    <li><a href="projekti.html#bootstrap">Sajt u Bootstrapu</a></li>
+                     <li><a href="projekti.html#lavirint">Lavirint u C++</a></li>
+                  </ul>
+                </li>
+                <li><a href="html.html">HTML i CSS</a></li>
+                <li><a href="cplusplus.html">C++</a></li>
+                <li><a href="mapa.html">Mapa sajta</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div> <!--================================ kraj navigacije =====================================-->
+
+<div class="projekti">
+
+      <h2>Svi moji projekti<br><br> </h2>
+
+    </div>
+<div clas="container-fluid">
+ <div class="row">
+   <div class="col-md-6 tekst" id="opengl"><strong><h3>Space Invaders</h3> </strong><br><br> &nbsp; Školski projekat kod profesora Perice Štrbac bio je vezan za programski jezik C++ i OpenGL. Par kolega i ja smo osmislili ideju i zatim je došao teži deo posla, (pošto nismo imali dodira ni sa jednim od navedenih programskih jezika) da se otkuca kôd. Nakon dosta vremena, muke, kod je proradio i mi smo bili presrećni, usput smo dosta naučili, o samom načinu funkcionisanja debagera, o tome kako treba razmišljati, da svaku sitnicu pre početka pisanja koda treba na papir staviti, a tek onda korsititi razvojno okruženje.
+    <br> &nbsp; Morali smo da napravimo više objekata, pa da ih sve smestimo u matricu, koja je bila dinamička, pomerala se ulevo. Zatim smo kreirali strukturu igrač koja je mogla da se kreće po y-osi i statične elemente po y-osi, ali zato se x koordinata smanjivala po vremenua samo pojavljivanje tih elemenata je bilo na slučajnoj poziciji (nisu smeli da se preklapaju, kao ni da budu svi u sitom redu). Sve to je dovodilo do toga da deluje kao da se elementi pomeraju ka igracu koji mora da ih izbegava i na taj način "preživi".
+    <br> &nbsp; Igrica je imala tri nivoa. Prelaskom u novi nivo (u matrici je bilo 200 elemenata), odnosno prolaskom svih elemenata matrice, dolazila je nova matrica sa istim brojem elemenata, novim rasporedom, ali su elementi nailazili dosta brže nego u prethodnom nivou. Igrica se završava kada se sudarite sa dolazećim objektom.
+
+     <br><br><br><br>
+     <p id="muzicki"><strong><h3>Muzički magazin</h3></strong><br><br> &nbsp;Druga godina studija, nova znanja, novi programski jezik za mene i prvi samostalan projekat- sajt Muzičkog magazina. Lep osećaj, ali zadatak nimalo lak. Za mene kao početnika predstavljalo je izazov to što smo zadatak dobili na pola semestra, što je značilo da nismo prešli ni celokupno gradivo, a kako to obično bude, nije sve baš 100% ni naučeno.
+     <br> &nbsp;Svaki početak je težak, pa tako ni ovo nije išlo glatko. Prvo sam morao osmisliti dizajn, a ni sam nisam znao šta želim, niti kako to može da izgleda. Dosta pomoći sam imao sa časova Web Dizajna, pa sam primenio neke elemente tamo naučene (kako i gde treba smestiti koji element, koje boje su preporučljive, kako koristiti naslove, itd.). Nakon par sati eksperimentisanja, kucanja, isprobavanja, brisanja, pa ponovnog dizajniranja, napravio sam nešto što je mene zadovoljilo, mada sam opet bio i poprilično nezadovoljan. Svaki put kada nešto pravite, želite da to bude najbolje što može.
+     <br> &nbsp;Na kraju sam napravio sajt, imao je samo 5 strana, ali to je bio kriterijum. Početna strana, sa navigacijom, lepom HD slikom, tekst kao slogan na sredini ispod navigacije, a ispod toga dugme koje nas šalje na formu za rezervacije karata za koncerte. Stranica o nama sa uopštenim informacijama, zatim galerija sa slikama sa nedavno održanih koncerata, već pomenuta rezervacija karata i stranica kontakt sa podacima o tom nekom magazinu. </p>
+
+     <br><br><br><br>
+     <p id="bootstrap"><strong><h3>Moj sajt</h3> </strong><br><br> &nbsp;Moj sajt je upravo ovaj sajt na kojem sam radio, a rezultat možete i sami videti. Još jedan u nizu školskih projektata. Ovde je akcenat stavljen na gotove elemente "Bootstrapa" i njihovu izmenu. Pozitivna stvar je ta što možete za relativno kratko vreme da uradite neki sajt, a da on pritom ne košta više od 150 evra.
+     <br> &nbsp;Bootstrap koristi, takođe, svoje CSS i JS fajlove u kojima je sav kod koji koriste svi elementi koje oni poseduju na svom sajtu. To je, donekle, problem početnicima u ovoj oblasti, jer ako niste dobro savladali CSS, nece vam biti jasno zašto se nešto ne menja, a vi ste u svom CSS fajlu napisali to što ste želeli da uradite. Kao što već rekoh, Bootstrap koristi svoj CSS i tu ima svega, tako da nekad ta neka svojstva koja očigledno smetaju vašim moraju biti ili promenjena ili izbrisana.
+     <br> &nbsp;  Ovaj sajt još nije ocenjen, ali nadam se da ima sve elemente koji su traženi, pošto sam uložio dosta truda i rada. Nažalost, svaki sajt radjen pomoću Bootstrapa liči jedan na drugi. Potrudio sam se da to ne bude baš 100% slučaj i sa ovim. Vi procenite! </p>
+
+    <br><br><br><br>
+    <p id="lavirint"><strong><h3>Lavirint</h3> </strong><br><br> &nbsp;Lavirint je projekat iz predmeta Programski jezici. Pravljen je u programskom jeziku C++. Naravno, nakon dobro smišljene ideje po kojoj ce se kasnije pisati kôd bilo je još nekih zahteva od strane profesorke.
+    <br><br> &nbsp; Igrica/program je morao da sadrži sledeće elemente:
+    <br>&nbsp;&nbsp;-Funkcije
+    <br>&nbsp;&nbsp;-Strukture
+    <br>&nbsp;&nbsp;-Rad sa datotekom
+    <br>&nbsp;&nbsp;-Dinamičku dodelu i oslobadjanje memorije
+    <br><br>&nbsp; Moj lavirint se sastojao iz dosta funkcija koje su pokretale meni, prikupljale komande od igrača, upisivale ime igrača u strukturu, pa odatle u datoteku, kao i iz datoteke na ekran kad je to zatraženo. Sve u svemu, dosta razmišljanja o samoj logici, ali i isprobavanja kôda.
+    <br>&nbsp; Logika je bila da kad se pokrene igrica, vidimo uvodni tekst dobrodošlice i zatim da iz glavnog menija biramo da li želimo da započnemo igru, da vidimo prethodne rezultate, da ostavimo utisak o igrici, ili da izađemo iz igrice. Nakon započinjanja, od nas se traži da unesemo ime, nakon toga biramo nivo i krećemo. Prvi nivo je cinila matrica dimenzija 21x21 (10 polja), drugi nivo matrica veličine 31x31, a treći nivo matrica 41x41. Zidove lavirinta činili su simboli "#" dok su prostor između njih zauzimali prazni karakteri ili " ". Cilj igrice je izaći iz lavirinta, na obeleženom izlazu. Rezultat je zavisio od broja pomeraja igrača. Zabavio sam se dok sam je pravio, zabavili se profesori kad sam branio rad.  </p>
+   </div>
+   <div class="col-md-6">
+      <img class="slike1" src="slike/opengl.jpg" alt="openGL" width="100%" height="25%">
+      <img class="slike2" src="slike/UIT1.png" alt="Muzički magazin" width="100%" height="25%"> 
+      <img class="slike3" src="slike/index1.png" alt="Sajt pomoću Bootstrapa" width="100%" height="25%">
+      <img class="slike4" src="slike/lavirint.png" alt="Lavirint" width="100%" height="25%">
+
+
+   </div>
+   
+ </div>
+</div>
+
+
+      <!--==================================== FOOTER ===============================================-->
+      <footer class="fixed-bottom">
+        <p class="pull-right"><a href="#">Povratak na vrh strane</a></p>
+        <p>&copy; 2016 Stefan Inc. &middot;  <a href="http://www.facebook.com/stefan.cosic.3" target="_blank"> <img src="slike/facebook-ikonica.png" alt="Projekti-Facebook ikonica" style="width:20px;height:20px;"></a> 
+          
+          &middot;<a href="https://www.linkedin.com/in/stefan-%C4%87osi%C4%87-758359131?trk=nav_responsive_tab_profile" target="_blank"> <img src="slike/linkedin-ikonica.png" alt="Projekti-Linkedin ikonica" style="width:20px;height:20px;"></a>
+
+          &middot;<a href="https://www.instagram.com/stefauskas/" target="_blank"> <img src="slike/instagram-ikonica.png" alt="Projekti-Instagram ikonica" style="width:20px;height:20px;"></a>
+
+          &middot;<a href="https://www.youtube.com/user/MrStefancosic" target="_blank"> <img src="slike/youtube-ikonica.png" alt="Projekti-Youtube ikonica" style="width:20px;height:20px;"></a>
+
+          &middot;<a href="https://twitter.com/klosarkas11" target="_blank"> <img src="slike/tviter-ikonica.png" alt="Projekti-Twiter ikonica" style="width:20px;height:20px;"></a>
+
+          <a href="oNama.html">&nbsp;O nama &nbsp;</a>
+            <a href="FAQ.html">FAQ &nbsp;</a>
+            <a href="kontakt.html">Kontakt </a>
+            
+      </footer>
+
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
